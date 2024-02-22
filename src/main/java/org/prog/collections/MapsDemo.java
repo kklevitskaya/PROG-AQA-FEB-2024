@@ -30,23 +30,23 @@ public class MapsDemo {
 //        System.out.println(stringMap.getOrDefault("key1", "defaultValue"));
 //        System.out.println(stringMap.getOrDefault("key3", "defaultValue"));
 
-        Car redCar = new Car();
-        Car blueCar = new Car();
-        redCar.color = "red";
-        blueCar.color = "blue";
-
-        Map<Car, String> carOwners = new HashMap<>();
-        carOwners.put(redCar, "Joe");
-        carOwners.put(blueCar, "Joe");
-        carOwners.put(new Car(), "Kate");
-        carOwners.put(new Car(), "Bill");
-
-        Map<String, List<Car>> ownedCars = new HashMap<>();
-        ownedCars.put("Joe", new ArrayList<>());
-        List<Car> joesCars = ownedCars.get("Joe");
-        joesCars.add(redCar);
-
-        ownedCars.get("Joe").add(new Car());
+//        Car redCar = new Car();
+//        Car blueCar = new Car();
+//        redCar.color = "red";
+//        blueCar.color = "blue";
+//
+//        Map<Car, String> carOwners = new HashMap<>();
+//        carOwners.put(redCar, "Joe");
+//        carOwners.put(blueCar, "Joe");
+//        carOwners.put(new Car(), "Kate");
+//        carOwners.put(new Car(), "Bill");
+//
+//        Map<String, List<Car>> ownedCars = new HashMap<>();
+//        ownedCars.put("Joe", new ArrayList<>());
+//        List<Car> joesCars = ownedCars.get("Joe");
+//        joesCars.add(redCar);
+//
+//        ownedCars.get("Joe").add(new Car());
 
     }
 }
