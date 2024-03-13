@@ -54,4 +54,21 @@ public class AlloUaPage {
     public void scrollToElement(WebElement e) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", e);
     }
+    public void nextPage(){
+        WebElement paginationNext = driver.findElement(By.className("pagination__next"));
+        paginationNext.click();
+    }
+
+    public void previousPage(){
+        WebElement paginationPrevious = driver.findElement(By.className("pagination__prev"));
+        paginationPrevious.click();
+    }
+
+    public void pageByNumber(int number){
+        String xPathPlusNumber = "//*[@id='__layout']/div/div[1]/div[2]/div/div[2]/div[3]/ul/li[" + number + "]";
+        WebElement paginationByNumber = driver.findElement(By.xpath(xPathPlusNumber));
+        paginationByNumber.click();
+
+    }
+
 }
